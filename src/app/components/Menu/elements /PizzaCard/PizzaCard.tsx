@@ -30,7 +30,10 @@ export default function PizzaCard({
   return (
     <div className={s.pizza_card}>
       <div className={s.pizza_type}>
-        <img src={`/src/app/assets/icons/${type}.svg`} alt="" />
+        <img
+          src={`../../../../../../src/app/assets/icons/${type}.svg`}
+          alt=""
+        />
       </div>
       <div className={s.pizza_img_container}>
         <img
