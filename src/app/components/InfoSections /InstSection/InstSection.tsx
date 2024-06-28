@@ -19,7 +19,10 @@ export default function InstSection({ id }: InstSectionProps) {
   const { setRef } = useScroll()
 
   return (
-    <div className={s.section} ref={setRef(id)}>
+    <div
+      className={s.section}
+      ref={setRef(id) as React.RefObject<HTMLDivElement>}
+    >
       <div className={s.container}>
         <div className={s.title}>Следите за нами в Instagram</div>
         <div className={s.subtitle}>@pizzamenu</div>

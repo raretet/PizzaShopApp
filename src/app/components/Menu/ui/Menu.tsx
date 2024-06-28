@@ -35,7 +35,10 @@ const Menu = observer(({ id }: MenuProps) => {
 
   return (
     <>
-      <div className={s.title} ref={setRef(id)}>
+      <div
+        className={s.title}
+        ref={setRef(id) as React.RefObject<HTMLDivElement>}
+      >
         Выберите Пиццу
       </div>
       <div className={s.filter}>

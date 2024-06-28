@@ -13,7 +13,10 @@ export default function ThirdSection({ id }: ThirdSectionProps) {
 
   return (
     <div className={s.section}>
-      <div className={s.container} ref={setRef(id)}>
+      <div
+        className={s.container}
+        ref={setRef(id) as React.RefObject<HTMLDivElement>}
+      >
         <div className={s.title}>Доставка и оплата</div>
         <div className={s.content}>
           <div className={s.item}>
