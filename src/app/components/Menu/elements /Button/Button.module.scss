@@ -1,0 +1,14 @@
+.pizza_card_btn button {
+    background-color: var(--default-color);
+    transition: .2s;
+    color: #FFFF;
+    padding: 15px 70px;
+    border-radius: 10px;
+    &:hover {
+        background-color: var(--hover-color);
+    }
+
+    &:active {
+        background: var(--pressed-color);
+    }
+}

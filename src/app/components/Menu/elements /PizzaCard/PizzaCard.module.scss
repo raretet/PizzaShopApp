@@ -1,0 +1,96 @@
+.pizza_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 530px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.pizza_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+.pizza_img {
+    margin-left: 10px;
+}
+
+.pizza_type {
+    width: 100%;
+    display: flex;
+    & img {
+        padding: 10px;
+    }
+}
+
+.pizza_name {
+    text-align: center;
+    font-size: var(--h4-fs);
+    font-weight: var(--h4s-fw);
+}
+
+.pizza_description {
+    text-align: center;
+    font-size: var(--dsc-fs);
+    color: var(--second-color);
+    padding: 0px 5px;
+}
+
+.pizza_price {
+    font-size: var(--h4-fs);
+    margin: 10px 0;
+}
+
+// size-switcher
+
+.size_switcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+    background: #EFF0F1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.size_switcher button {
+    color: var(--second-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px    
+}
+
+.active {
+    background: #FFFFFF;
+    color: var(--main-color);
+}
+
+.size_description {
+    text-align: center;
+}
+
+// sizes
+
+.small {
+    width: 100px;
+    height: 100px;
+}
+.medium {
+    width: 150px;
+    height: 150px;
+}
+.large {
+    width: 200px;
+    height: 200px;
+}
+
+
+

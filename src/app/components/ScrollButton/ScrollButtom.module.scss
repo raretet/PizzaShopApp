@@ -1,0 +1,14 @@
+.btn {
+    font-size: var(--p-fs);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .25s;
+
+    &:hover {
+        color: var(--default-color)
+    }
+
+    &:active {
+        color: var(--pressed-color);
+    }
+}

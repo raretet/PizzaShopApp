@@ -1,0 +1,72 @@
+.orderForm {
+    & input {
+        border: 1px solid var(--disable-color);
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personal_data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & input {
+        width: 100%;
+    }
+}
+
+.submit_btn {
+    background-color: var(--default-color);
+    width: 200px;
+    border: none !important;
+    text-transform: uppercase;
+    color: #FFFF;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover-color);
+        color: #FFFF;
+    }
+
+    &:active {
+        background-color: var(--pressed-color);
+    }
+}
+
+.payment {
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+
+    & label {
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            color: var(--hover-color);
+        }
+
+        &:active {
+            color: var(--pressed-color);
+        }
+    }
+
+    & input {
+        cursor: pointer;
+        width: 20px;
+    }
+}
+
+.error {
+    color: var(--default-color);
+}

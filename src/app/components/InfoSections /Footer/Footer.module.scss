@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000;
+}
+
+.info {
+    display: flex;
+    gap: 50px;
+}
+
+.title {
+    color: #FFFF;
+    font-size: var(--p-fs);
+}
+
+.description {
+    color: #FFFF;
+    font-size: var(--dsc-fs);
+    color: var(--second-color);
+}
+
+.police {
+    color: #FFFF;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        padding: 20px;
+
+        & img {
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info {
+        justify-content: space-between;
+    }
+
+    .police {
+        text-align: right;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer img {
+        width: 100px;
+    }
+}

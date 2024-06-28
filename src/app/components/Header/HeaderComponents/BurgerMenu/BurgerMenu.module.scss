@@ -1,0 +1,53 @@
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: #313945;
+    z-index: 9999;
+    animation: menuAnimation .2s ease-in-out ;
+}
+
+.navigation {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  & button {
+    margin-left: 0;
+    font-size: var(--h4-fs);
+    font-weight: 700;
+    color: #FFFF;
+    padding-bottom: 10px;
+  }
+  border-bottom: 1px outset #FFFF;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+@keyframes menuAnimation {
+  0% { height: 0; }
+  100% { height: 50vh; }
+}

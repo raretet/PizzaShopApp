@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.title {
+    cursor: pointer;
+    transition: .25s;
+}
+
+.title:hover {
+    color: var(--default-color)
+}
+
+.description {
+    color: var(--second-color);
+    font-size: var(--dsc-fs);
+}
+
+.img {
+    height: 40px;
+    width: 40px;
+}
+
+// MEDIA
+
+@media (max-width: 800px) {
+    .info, .title, .description {
+        display: none;
+    }  
+    
+    .img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
